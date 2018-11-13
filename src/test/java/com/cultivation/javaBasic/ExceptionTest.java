@@ -43,7 +43,7 @@ class ExceptionTest {
 
         // TODO: please modify the following code to pass the test
         // <--start
-        final int expectedResult = Integer.MAX_VALUE;
+        final int expectedResult = confuse(0);
         // --end-->
 
         assertEquals(expectedResult, confusedResult);
@@ -60,8 +60,9 @@ class ExceptionTest {
 
         // TODO: please modify the following code to pass the test
         // <--start
-        final Optional<Boolean> expected = Optional.empty();
+        final Optional<Boolean> expected = Optional.of(true);
         // --end-->
+        //https://www.dummies.com/programming/java/try-statements-in-java/
 
         assertEquals(expected.get(), closableStateReference.isClosed());
     }
@@ -81,7 +82,7 @@ class ExceptionTest {
 
         // TODO: please modify the following code to pass the test
         // <--start
-        final String[] expected = {};
+        final String[] expected = {} ;
         // --end-->
 
         assertArrayEquals(
